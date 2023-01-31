@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson js 19</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <style>
+        body{
+            overflow: hidden;
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+      .container{
+   
+        width: 500px;
+        height: 600px;
+      }
+      h1{
+        text-align: center;
+        font-weight: 600;
+      }
+      .btn{
+        width: 100%;
+        height: 50px;
+        background-color: lightskyblue;
+        color: white;
+        border-radius: 10px;
+        border: 1px solid lightskyblue;
+        font-size: 22px;
+      }
+.box2{
+    height: 350px;
+    width: 100%;
+}
+.inp1{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    position: relative;
+}
+.inp{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    margin-top: 30px;
+    position: relative;
+}
+.gcheck{
+    background-image: url(check.svg);
+    background-position: right;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+.inp:focus{
+    border: 1px solid white;
+    outline: 1px solid white;
+    box-shadow: 0 0 3px 3px rgb(114, 114, 244);
+}
+.inp1:focus{
+    border: 1px solid white;
+    outline: 1px solid white;
+    box-shadow: 0 0 3px 3px rgb(114, 114, 244);
+}
+.inp::placeholder{
+    font-weight: 700;
+}
+.inp1::placeholder{
+    font-weight: 700;
+}
+.cbox{
+    margin-top: 30px;
+}
+.borderGreen{
+    border: 3px solid green;
+}
+.error1{
+    background-color: red;
+    color: white;
+    width: 230px;
+    height: 20px;
+    display: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+    position: absolute;
+}
+.error2{
+    background-color: red;
+    color: white;
+    width: 230px;
+    height: 20px;
+    display: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+    position: absolute;
+}
+.error3{
+    background-color: red;
+    color: white;
+    width: 250px;
+    height: 18px;
+    display: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+    position: absolute;
+}
+.error4{
+    background-color: red;
+    color: white;
+    width: 250px;
+    height: 18px;
+    display: none;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-top: 5px;
+    padding-left: 10px;
+    position: absolute;
+}
+.btn:hover{
+    opacity: 0.5;
+}
+.popup{
+    display: none;
+    width: 510px;
+    height: 339px;
+    position: absolute;
+    left: 34%;
+    top: 21%;
+    background-color: rgb(255, 228, 228);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.greenBg{
+    width: 100%;
+    height: 160px;
+    background-color: rgb(43, 147, 43);
+    background-image: url(check.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mainBlock{
+    text-align: center;
+}
+.btn2{
+    background-color: green;
+    color: white;
+    border-radius: 15px;
+    border: 1px solid green;
+    width: 150px;
+    height: 40px;
+    background-image: url(arrow-right.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 23px;
+}
+    </style>
+</head>
+<body>
+    <form >
+    <div class="container">
+  <h1>Please sign up</h1>
+  <div class="box2">
+  <input type="text" name="" id="i1" class="inp1" placeholder="First Name">
+  <div class="error1">Please provide a valid First name.</div>
+  <input type="text" name="" id="i2" class="inp" placeholder="Last Name">
+  <div class="error2">Please provide a valid Last name.</div>
+  <input type="email" name="" id="i3" class="inp" placeholder="Email address">
+  <div class="error3">Please provide a valid Email address.</div>
+  <input type="password" name="" id="i4" class="inp" placeholder="Password">
+  <div class="error4">Please provide a valid Password.</div>
+  <br>
+  <label for="i5">
+  <input type="checkbox" name="" id="i5" class="cbox"><span>I agree with Privacy Policy</span>
+  </label>
+  </div>
+  <input type="button" value="Sign Up" class="btn" disabled>
+    </div>
+
+    <div class="popup">
+        <div class="greenBg"></div>
+        <div class="mainBlock">
+            <h2>Great!</h2>
+            <p>Your account has been created successfully.</p>
+            <input type="submit" class="btn2" value="Start Exploring">
+        </div>
+    </div>
+
+</form>
+    <script src="scriptJS19.js"></script>
+</body>
+</html>
